@@ -10,6 +10,8 @@
 
 .infocard { grid-area: infocard; }
 
+
+
 @media screen and (max-width:992px) {
     .infolist {
         grid-template-areas:
@@ -17,3 +19,10 @@
         grid-template-columns: 1fr 1fr;
     }
 }
+
+footer {
+    font-family: 'Pretendard-Regular';
+    bottom: 0px;
+    width: 100%;
+    /*바닥에 어케붙임*/
+  }

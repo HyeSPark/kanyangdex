@@ -4,10 +4,18 @@ import React, { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch, faCaretDown } from '@fortawesome/free-solid-svg-icons'
 import '../Search.css';
+import SearchTags from './SearchTags.js';
 
 function Search(props) {
     const [isDetailActive, setIsDetailActive] = useState(false);
-
+    const [locList, setLocList] = useState(
+        [
+            {id: 0, category: "북측", locs: ["아름관", "북측", "인사동"]},
+            {id: 1, category: "동측", locs: ["동측"]},
+            {id: 2, category: "서측", locs: ["서측회관", "여울나들", "다솜희망", "원내", "나래미르"]}
+        ])
+    const [lookList, setLookList] = useState([])
+    const constDownIcon =  <FontAwesomeIcon icon= {faCaretDown} />
 
     function menuToggle() {
         setIsDetailActive(!isDetailActive);
@@ -25,19 +33,33 @@ function Search(props) {
                 </button>
             </div>
             <div className={isDetailActive
-            ? "detailed_search active"
-            : "detailed_search"
+            ? "searchbox__more active"
+            : "searchbox__more"
             }>
-                <ul className="searchbox__detailList">
-                    <li>서식지<a href="" className="dropdown">전체 <FontAwesomeIcon icon={faCaretDown} /></a></li>
-                    <li>무늬<a href="" className="dropdown">전체 <FontAwesomeIcon icon={faCaretDown} /></a></li>
-                </ul>
+            <ul className="searchbox__detailList">
+                <li className="searchbox__details loc">
+                    <b>서식지</b>
+                    <hr style={{border:"solid 1px rgb(209, 152, 106)"}}></hr>
+                    <SearchTags locList={locList} ></SearchTags>
+                </li>
+                <li className="searchbox__details look">
+                    <b>무늬</b>
+                    <hr style={{border:"solid 1px rgb(209, 152, 106)"}}></hr>
+                    <div href="" className="searchbox__detail">
+                    </div>
+                 </li>
+            </ul>
             </div>
-            <div className="expanded_searchBox" onClick={menuToggle}>
-                <a className="searchbox__expand" href="#">
+            <div className="searchbox__expanded" onClick={menuToggle}>
+                <a className="searchbox__expandBtn" href="#">
                     {isDetailActive
                     ? "닫기"
-                    : "상세검색" } <FontAwesomeIcon icon={faCaretDown} />
+                    : "상세검색 "
+                    } 
+                    <FontAwesomeIcon className= {isDetailActive
+                    ? "searchbox__expandIcon active"
+                    : "searchbox__expandIcon"
+                    } icon= {faCaretDown} />
                 </a>
             </div>
         </div>

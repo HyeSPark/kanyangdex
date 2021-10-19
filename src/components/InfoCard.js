@@ -13,7 +13,20 @@ function InfoCard(props) {
         치즈 : "look_cheese", //bg color : white, color : yellow
         고등어 : "look_gofish",//bg color : grey, color : black
     }
-    const nameOfClassLook = "infocard__look " + looks[props.catList.look]
+
+    const locs = {
+        아름관 : "loc_n-ar",
+        북측 : "loc_n-north",
+        인사동 : "loc_n-4",
+        동측 : "loc_e-east",
+        서측회관 : "loc_w-2",
+        여울나들관 : "loc_w-yn",
+        다솜희망관 : "loc_w-dh",
+        원내아파트 : "loc_w-5",
+        나래미르관 : "loc_w-6",
+    }
+    const nameOfClassLook = "infocard__tag " + looks[props.catList.look];
+    const nameOfClassLoc = "infocard__tag " + locs[props.catList.loc];
 
     return (
         <a href="" className="infocard">
@@ -23,7 +36,7 @@ function InfoCard(props) {
             <div className="infocard__textBox">
                 <h2 className="infocard__name">{props.catList.name}</h2>
                 <div className="infocard__tags">
-                    <span className="infocard__loc">{props.catList.loc}</span>
+                    <span className={nameOfClassLoc}>{props.catList.loc}</span>
                     <span className={nameOfClassLook}>{props.catList.look}</span>
                 </div>
             </div>

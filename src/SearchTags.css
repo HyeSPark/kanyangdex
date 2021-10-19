@@ -1,0 +1,116 @@
+.searchbox__detail{
+    display: flex;
+    flex-direction: column;
+}
+
+.searchtags__north {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+/* .searchtags__east {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.searchtags__west {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+} */
+.searchtags__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-left: 15px;
+    margin-top: 8px;
+}
+
+.searchtag {
+    display: block;
+    margin: 5px 6px;
+    padding: 5px 15px;
+    color: white;
+    text-decoration: none;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 0.9em;
+    transition:  all 0.1s ease 0s;
+}
+.searchtag__loc0 {
+    box-shadow: 0 0 0 2px rgb(177, 108, 81) inset; 
+    color: rgb(177, 108, 81);
+    background-color: transparent;
+}
+/* rgb(122, 83, 141) */
+
+.searchtag__loc0.active {
+    background-color: rgb(177, 108, 81);
+    box-shadow: transparent;
+    color:white;
+}
+
+.searchtag__loc1 {
+    box-shadow: 0 0 0 2px rgb(126, 120, 118) inset; 
+    color: rgb(126, 120, 118);
+    background-color: transparent;
+}
+/* rgb(126, 120, 118)rgb(122, 83, 141) */
+
+.searchtag__loc1.active {
+    background-color: rgb(126, 120, 118);
+    box-shadow: transparent;
+    color:white;
+}
+
+.searchtag__loc2 {
+    box-shadow: 0 0 0 2px rgb(122, 83, 141) inset; 
+    color: rgb(122, 83, 141);
+    background-color: transparent;
+}
+/* rgb(126, 120, 118)rgb(122, 83, 141) */
+
+.searchtag__loc2.active {
+    background-color: rgb(122, 83, 141);
+    box-shadow: transparent;
+    color:white;
+}
+
+
+.searchbox__detailList {
+    display: grid;
+    grid-template-areas: 
+    "loc look";
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 30px;
+
+}
+
+.searchbox__details.loc {
+    grid-area: loc;
+}
+.searchbox__details.look {
+    grid-area: look;
+}
+
+.searchtag:hover {
+    transform: scale(1.1,1.1)
+}
+
+.seatchtags__cate {
+    padding-right: 10px;
+}
+.unchecked {
+    color: rgba(131, 131, 131, 0.493);
+}
+
+.seatchtags__cate {
+    display: inline-block;
+    transition:  all 0.3s ease 0s;
+}
+
+.seatchtags__cate:hover {
+    color: rgb(77, 77, 77);
+    transform: scale(1.1, 1.1); 
+}

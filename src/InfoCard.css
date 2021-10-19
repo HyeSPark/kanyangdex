@@ -45,26 +45,12 @@ img {
     justify-content: space-between;
 }
 
-.infocard__loc {
+.infocard__tag {
     text-align: center;
     display: block;
     width: 100%;
     padding: 5px 10px;
     margin: 0px 2px;
-    background-color: hotpink;
-    color: white;
-    border-radius: 24px;
-    font-weight: bolder;
-}
-
-.infocard__look {
-    text-align: center;
-    display: block;
-    width: 100%;
-    padding: 5px 10px;
-    margin: 0px 2px;
-    /* background-color:rosybrown;
-    color: white; */
     border-radius: 24px;
     font-weight: bolder;
 }
@@ -104,4 +90,41 @@ img {
 .look_gofish {
     background-color: grey;
     color: black;
+}
+
+.loc_n-ar {
+    background-color:rgb(177, 108, 81);
+    color: white;
+}
+.loc_n-north {
+    background-color:rgb(177, 108, 81);
+    color: white;
+}
+.loc_n-4 {
+    background-color:rgb(177, 108, 81);
+    color: white;
+}
+.loc_e-east {
+    background-color:rgb(126, 120, 118);
+    color: white;
+}
+.loc_w-2 {
+    background-color:rgb(122, 83, 141);
+    color: white;
+}
+.loc_w-yn {
+    background-color:rgb(122, 83, 141);
+    color: white;
+}
+.loc_w-dh {
+    background-color:rgb(122, 83, 141);
+    color: white;
+}
+.loc_w-5 {
+    background-color:rgb(122, 83, 141);
+    color: white;
+}
+.loc_w-6 {
+    background-color:rgb(122, 83, 141);
+    color: white;
 }
