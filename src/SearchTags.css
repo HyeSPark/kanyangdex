@@ -39,40 +39,37 @@
     transition:  all 0.1s ease 0s;
 }
 .searchtag__loc0 {
-    box-shadow: 0 0 0 2px rgb(177, 108, 81) inset; 
-    color: rgb(177, 108, 81);
+    box-shadow: 0 0 0 2px var(--main-brown-color) inset; 
+    color: var(--main-brown-color);
     background-color: transparent;
 }
-/* rgb(122, 83, 141) */
 
 .searchtag__loc0.active {
-    background-color: rgb(177, 108, 81);
+    background-color: var(--main-brown-color);
     box-shadow: transparent;
     color:white;
 }
 
 .searchtag__loc1 {
-    box-shadow: 0 0 0 2px rgb(126, 120, 118) inset; 
-    color: rgb(126, 120, 118);
+    box-shadow: 0 0 0 2px var(--main-wgrey-color) inset; 
+    color: var(--main-wgrey-color);
     background-color: transparent;
 }
-/* rgb(126, 120, 118)rgb(122, 83, 141) */
 
 .searchtag__loc1.active {
-    background-color: rgb(126, 120, 118);
+    background-color: var(--main-wgrey-color);
     box-shadow: transparent;
     color:white;
 }
 
 .searchtag__loc2 {
-    box-shadow: 0 0 0 2px rgb(122, 83, 141) inset; 
-    color: rgb(122, 83, 141);
+    box-shadow: 0 0 0 2px var(--main-purple-color) inset; 
+    color: var(--main-purple-color);
     background-color: transparent;
 }
-/* rgb(126, 120, 118)rgb(122, 83, 141) */
 
 .searchtag__loc2.active {
-    background-color: rgb(122, 83, 141);
+    background-color: var(--main-purple-color);
     box-shadow: transparent;
     color:white;
 }

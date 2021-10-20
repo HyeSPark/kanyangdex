@@ -15,7 +15,20 @@ input, textarea, button {
   -moz-border-radius: 0; 
 }
 
-
+:root {
+  --main-black-color: #282c34;
+  --main-beige-color: rgb(230, 219, 200);
+  --main-beige-down-color: rgb(194, 181, 158);
+  --main-brown-color: rgb(177, 108, 81);
+  --main-wgrey-color: rgb(126, 120, 118);
+  --main-purple-color: rgb(122, 83, 141);
+  --sub-tag-brown-color: rgb(209, 152, 106);
+  --sub-tag-grey-strk-color: rgb(78, 78, 78);
+  --sub-tag-grey-bg-color: grey;
+  --sub-tag-yellow-color: peru;
+  --sub-tag-black-color: #282c34;
+  --style-box-shadow: 0px 2px 12px rgb(145, 145, 145);
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

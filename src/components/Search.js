@@ -39,12 +39,12 @@ function Search(props) {
             <ul className="searchbox__detailList">
                 <li className="searchbox__details loc">
                     <b>서식지</b>
-                    <hr style={{border:"solid 1px rgb(209, 152, 106)"}}></hr>
+                    <hr style={{border:"solid 1px var(--sub-tag-brown-color)"}}></hr>
                     <SearchTags locList={locList} ></SearchTags>
                 </li>
                 <li className="searchbox__details look">
                     <b>무늬</b>
-                    <hr style={{border:"solid 1px rgb(209, 152, 106)"}}></hr>
+                    <hr style={{border:"solid 1px var(--sub-tag-brown-color)"}}></hr>
                     <div href="" className="searchbox__detail">
                     </div>
                  </li>

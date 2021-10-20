@@ -20,7 +20,7 @@ img {
 
 .infocard:hover >
 .infocard__img {
-    box-shadow: 0px 2px 12px rgb(145, 145, 145);
+    box-shadow: var(--style-box-shadow);
     transform: translate(0px, -4px);
 }
 
@@ -59,72 +59,50 @@ img {
     background-color: white;
     border: solid 2px;
     color: black;
-    border-color: rgb(209, 152, 106);
+    border-color: var(--sub-tag-brown-color);
 }
 
 .look_chaos {
-    background-color: rgb(209, 152, 106);
+    background-color: var(--sub-tag-brown-color);
     border: solid 2px;
-    border-color: rgb(78, 78, 78);
+    border-color: var(--sub-tag-grey-strk-color);
     color: black;
 }
 
 .look_tuxedo {
-    background-color: #282c34;
+    background-color: var(--sub-tag-black-color);
     color: white;
 }
 
 .look_cow {
     background-color: white;
     border: solid 2px;
-    border-color: rgb(78, 78, 78);
+    border-color: var(--sub-tag-grey-strk-color);
     color: black;
 }
 .look_cheese {
     background-color: white;
     border: solid 2px;
-    border-color:peru;
-    color: peru;
+    border-color:var(--sub-tag-yellow-color);
+    color: var(--sub-tag-yellow-color);
 }
 
 .look_gofish {
-    background-color: grey;
+    background-color: var(--sub-tag-grey-bg-color);
     color: black;
 }
 
-.loc_n-ar {
-    background-color:rgb(177, 108, 81);
+.loc_n-ar, .loc_n-north, .loc_n-4{
+    background-color:var(--main-brown-color);
     color: white;
 }
-.loc_n-north {
-    background-color:rgb(177, 108, 81);
-    color: white;
-}
-.loc_n-4 {
-    background-color:rgb(177, 108, 81);
-    color: white;
-}
+
 .loc_e-east {
-    background-color:rgb(126, 120, 118);
+    background-color:var(--main-wgrey-color);
     color: white;
 }
-.loc_w-2 {
-    background-color:rgb(122, 83, 141);
-    color: white;
-}
-.loc_w-yn {
-    background-color:rgb(122, 83, 141);
-    color: white;
-}
-.loc_w-dh {
-    background-color:rgb(122, 83, 141);
-    color: white;
-}
-.loc_w-5 {
-    background-color:rgb(122, 83, 141);
-    color: white;
-}
-.loc_w-6 {
-    background-color:rgb(122, 83, 141);
+
+.loc_w-2, .loc_w-yn, .loc_w-dh, .loc_w-5, .loc_w-6{
+    background-color:var(--main-purple-color);
     color: white;
 }

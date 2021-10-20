@@ -7,7 +7,7 @@ li {
 }
 .navbar {
   /* font-family: 'Pretendard-Regular'; */
-  background-color: #282c34;
+  background-color: var(--main-black-color);
   padding: 15px 20px 15px 20px;
   color: white;
   flex-direction: row;
