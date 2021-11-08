@@ -20,10 +20,10 @@ function InfoCard(props) {
         인사동 : "loc_n-4",
         동측 : "loc_e-east",
         서측회관 : "loc_w-2",
-        여울나들관 : "loc_w-yn",
-        다솜희망관 : "loc_w-dh",
-        원내아파트 : "loc_w-5",
-        나래미르관 : "loc_w-6",
+        여울나들 : "loc_w-yn",
+        다솜희망 : "loc_w-dh",
+        원내 : "loc_w-5",
+        나래미르 : "loc_w-6",
     }
     const nameOfClassLook = "infocard__tag " + looks[props.catList.look];
     const nameOfClassLoc = "infocard__tag " + locs[props.catList.loc];

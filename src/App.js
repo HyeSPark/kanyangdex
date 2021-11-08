@@ -16,6 +16,10 @@ function App() {
       [
         {src:SS, name:"한쪽이", loc:"아름관", look:"삼색이"},
         {src:SS, name:"깜쪽이", loc:"아름관", look:"카오스"},
+        {src:SS, name:"까까", loc:"아름관", look:"턱시도"},
+        {src:SS, name:"퐁듀", loc:"서측회관", look:"턱시도"},
+        {src:SS, name:"다미", loc:"서측회관", look:"삼색이"},
+        {src:SS, name:"건강", loc:"서측회관", look:"치즈"},
       ]);
 
   return (
@@ -23,12 +27,11 @@ function App() {
       <Navbar isLoggedIn={isLoggedIn}></Navbar>
       <Search></Search>
       <ul className="infolist">
-        <li>
-          <InfoCard className="infocard" catList={catList[0]}></InfoCard>
-        </li>
-        <li>
-          <InfoCard className="infocard" catList={catList[1]}></InfoCard>
-        </li>
+        {catList.map((el) => (
+          <li>
+            <InfoCard className="infocard" catList={el}></InfoCard>
+          </li>
+        ))}
       </ul>
       <footer>
         <p>Copyright © 2021 <span style = {{color: "rgb(94, 94, 94)"}}>HSPark</span> All rights reserved.</p>
